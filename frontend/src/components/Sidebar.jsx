@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
-import { ShieldAlert, Activity, Server, Users, Settings, Database, MessageSquare } from 'lucide-react';
+import React from 'react';
+import { Activity, Server, Users, Settings, Database, MessageSquare } from 'lucide-react';
 
-const Sidebar = () => {
-  const [activeTab, setActiveTab] = useState('Live Dashboard');
-
+const Sidebar = ({ activeTab, setActiveTab }) => {
   return (
     <div className="sidebar">
-      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '3rem' }}>
-        <ShieldAlert size={32} className="text-accent" />
-        <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 700, letterSpacing: '1px' }}>
-          Threat<span className="text-accent">Shield</span>
-        </h2>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '3rem' }}>
+        <img src="/logo.png" alt="ThreatShield Logo" style={{ width: '100%', maxWidth: '200px', objectFit: 'contain', borderRadius: '12px' }} />
       </div>
 
       <nav style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
