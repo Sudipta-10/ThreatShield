@@ -5,7 +5,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
   return (
     <div className="sidebar">
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '3rem' }}>
-        <img src="/logo.png" alt="ThreatShield Logo" style={{ width: '100%', maxWidth: '200px', objectFit: 'contain', borderRadius: '12px' }} />
+        <img src="/logo.png" alt="ThreatShield Logo" style={{ width: '100%', maxWidth: '280px', objectFit: 'contain', borderRadius: '12px' }} />
       </div>
 
       <nav style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
